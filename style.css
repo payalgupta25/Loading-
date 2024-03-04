@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.container{
+    display: flex;
+}
+
+h1{
+    color: rgb(255, 0, 0);
+    font-size: 8em;
+    letter-spacing: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+span:nth-child(1){
+    transform: translate(-50%,-50%);
+    animation: flip .6s linear ;
+    animation-delay: 0s;
+}
+
+span:nth-child(2){
+    transform: translate(-50%,-50%);
+    animation: flip .6s linear;
+    animation-delay: .6s;
+}
+
+span:nth-child(3){
+    transform: translate(-50%,-50%);
+    animation: flip .6s linear;
+    animation-delay: 1s;
+}
+
+span:nth-child(4){
+    transform: translate(-50%,-50%);
+    animation: flip .6s linear;
+    animation-delay: 1.5s;
+}
+
+span:nth-child(5){
+    transform: translate(-50%,-50%);
+    animation: flip .6s linear;
+    animation-delay: 2s;
+    margin-left: -25px;
+}
+
+span:nth-child(6){
+    transform: translate(-50%,-50%);
+    animation: flip .6s linear;
+    animation-delay: 2.5s;
+    margin-left: 20px;
+}
+
+span:nth-child(7){
+    transform: translate(-50%,-50%);
+    animation: flip .6s linear ;
+    animation-delay: 3s;
+    margin-left: 5px;
+}
+
+@keyframes flip {
+
+    0%{
+        transform: translate(-50%,-50%) perspective(200px) rotate(0deg) rotateX(0deg)
+    }
+
+    50%{
+        transform: translate(-50%,-50%) perspective(200px) rotateZ(0deg) rotateX(180deg)
+    }
+
+    100%{
+        transform: translate(-50%,-50%) perspective(200px) rotateZ(0deg) rotateX(360deg)
+    }
+    
+}
